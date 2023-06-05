@@ -1,0 +1,246 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-end;
+  margin-top: 20px;
+}
+
+.nav-list ul li{
+  display: inline-flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+
+.nav-list ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list ul li a:hover{
+  color:#02808f;
+}
+
+.btn{
+  background: #02808f;
+  color: #fff;
+  border: 1px solid #02808f;
+  border-radius: 30px;
+  padding: 12px 34px;
+}
+
+.btn:hover{
+  background:#02c39a;
+}
+
+.btn-header{
+  margin-top: -5px;
+}
+
+.hero-section{
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/bg.jpg");
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hero-text{
+  color: #fff;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1{
+  font-size: 6.2rem;
+}
+
+.hero-text p{
+  padding-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.span-class{
+  color: #02808f;
+}
+
+
+/* The about section styling */
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.about-section{
+  display: flex;
+  width: 80%:
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.about-box{
+  flex-basis: 48%;
+  padding: 20px 2px;
+
+}
+
+.about-box img{
+  width: 100%;
+  border-radius: 10%;
+}
+
+.about-box p{
+  padding: 15px 0 25px;
+}
+
+.demo{
+  content: '';
+  margin-top: 40px;
+}
+
+/* Hoe it works */
+
+.works{
+  background: #F6F9F6;
+  padding: 8rem;
+  text-align: center;
+}
+
+.works h1, p{
+  padding-bottom: 6rem;
+}
+
+
+.offer{
+  flex-basis: 31%;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 2rem;
+  padding: 5px 10px 50px 10px;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px rgba(255, 253, 253, 1);
+
+}
+
+.offer img{
+  border-radius: 50%;
+  height: 11rem;
+  margin-top: -7.5rem;
+  margin-bottom: 3rem;
+
+}
+
+.offer p{
+  padding-top: 20px;
+  padding: 0 1rem;
+}
+
+/* Conact section */
+
+.contact-us{
+  width: 80%;
+  margin: auto;
+  padding: 8rem 0;
+}
+
+.contact-us h4{
+  text-align: center;
+}
+
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col input, .contact-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.location{
+  width: 80%;
+  margin: auto;
+  margin-left: 6rem;
+}
+
+.location iframe{
+  width: 100%;
+
+}
+
+/* Media Query for Mobile View */
+@media (max-width:700px) {
+
+  .nav-list ul li{
+    display: none;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+
+  .demo{
+    display: none;
+  }
+
+  .offer{
+    margin-bottom: 10rem;
+  }
+
+  .works p{
+    margin-bottom: 4rem;
+  }
+
+  .location{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width:1216px){
+  .demo{
+    display: none;
+  }
+}
